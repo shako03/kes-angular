@@ -1,5 +1,52 @@
-main{
+*{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
       width: 100%;
       height: 83vh;
       background-color: antiquewhite;
+}
+
+.Theme-BTN {
+      border: none;
+      box-shadow: 5px 5px 5px;
+      background-color: darkgrey;
+      font-size: 15px;
+}
+
+
+.box {
+      width: 300px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      background-color: #fff;
+      border: 2px solid gray;
+}
+
+.img img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+}
+
+h1 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #333;
+}
+
+p {
+      font-size: 14px;
+      color: #666;
+}
+
+.cont{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
 }

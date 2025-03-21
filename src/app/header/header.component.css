@@ -1,13 +1,17 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
      header {
       background: #333;
-      padding: 20px;
+      padding: 20px ;
     }
     
     header nav {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
     }
     
     header nav ul {
@@ -19,13 +23,13 @@
     
     header nav ul li {
       display: flex;
-      gap: 20px;
+      gap: 7px;
     }
     
     header nav ul li a {
       text-decoration: none;
       color: white;
-      padding: 10px 15px;
+      padding: 5px 7px;
     }
     
     header nav ul li a:hover {

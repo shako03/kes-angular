@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -24,5 +25,19 @@ export class HomeComponent {
   }
 
   firstName = " "
+  savedFirstName = " "
+  namesArray : string[] = []    // ვეუბნებით რომ არის სტრინგების მასივი
+
+  saveName(){
+    this.savedFirstName = this.firstName
+    this.firstName = " "  //ვუთითებთ რადგან მეორე რამის დაწერა რო მოგვინდეს ძველი დაწერილი წაიშალოს
+    this.namesArray.push(this.savedFirstName)  //რამდენსაც გვინდა იმდენს შევიყვანთ და ყველას გამოვიტანთ და ყველა დაიფუშება არაიში
+    console.log(this.namesArray)
+    
+  }
+
+  // makeUpperCase(text : string){
+  //   return text.toUpperCase()
+  // }
 }
 

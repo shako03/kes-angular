@@ -43,6 +43,23 @@
 <!-- two way binding!  საჭიროა რომ დავაიმპორტოთ forms module --> 
 
  <!--   [()]   -->
+
+ <br>
+ <br>
+ <br>
+
  <input type="text" [(ngModel)]="firstName">
- <p>{{firstName}}</p>
+<button (click)="saveName()">save</button>
+
+
+ <br>
+
+
+
+ <!-- სტრუქტურული დეკორატორი ngFor |  ngIf -->
+
+ <ul>
+      <li *ngFor="let el of namesArray" >{{el}}</li>    <!--   სჭირდება იმპორტი common module - სი  --> 
+      <!-- შეგვიძლია ასეც გადავცეთ makeUpperCase(el) ეს ფუნქცია გვაქვს ტს ში და გადაყავს ტექსტი მაღალ შტრიხში -->
+ </ul>
 

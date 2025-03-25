@@ -27,6 +27,7 @@ export class HomeComponent {
   firstName = " "
   savedFirstName = " "
   namesArray : string[] = []    // ვეუბნებით რომ არის სტრინგების მასივი
+  isvisible = false
 
   saveName(){
     this.savedFirstName = this.firstName
@@ -34,6 +35,10 @@ export class HomeComponent {
     this.namesArray.push(this.savedFirstName)  //რამდენსაც გვინდა იმდენს შევიყვანთ და ყველას გამოვიტანთ და ყველა დაიფუშება არაიში
     console.log(this.namesArray)
     
+  }
+
+  showList(){
+  this.isvisible ? this.isvisible = false : this.isvisible = true
   }
 
   // makeUpperCase(text : string){

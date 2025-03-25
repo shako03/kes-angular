@@ -54,11 +54,12 @@
 
  <br>
 
+ <button (click)="showList()">sow user list</button>
 
 
  <!-- სტრუქტურული დეკორატორი ngFor |  ngIf -->
 
- <ul>
+ <ul *ngIf="isvisible" >
       <li *ngFor="let el of namesArray" >{{el}}</li>    <!--   სჭირდება იმპორტი common module - სი  --> 
       <!-- შეგვიძლია ასეც გადავცეთ makeUpperCase(el) ეს ფუნქცია გვაქვს ტს ში და გადაყავს ტექსტი მაღალ შტრიხში -->
  </ul>

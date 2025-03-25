@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -21,5 +22,7 @@ export class HomeComponent {
   ColMode() {
     this.color = this.color === this.linkstyle ? this.linkstyle1 : this.linkstyle;
   }
+
+  firstName = " "
 }
 

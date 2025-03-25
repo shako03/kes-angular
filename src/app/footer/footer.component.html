@@ -1,10 +1,8 @@
-<div class="content">
-
-  </div>
+<div class="content"></div>
   <footer>
      hello from footer
   </footer>
 
-  <app-button [info]="textFromParent"> </app-button>
+  <button (click)="print()">print btn</button>
 
-  <app-search></app-search>
+  <app-search [labelText]="labelFromParent" ></app-search>    <!--[input]=""   შეგვიძლია ცვლადიც გავატანოთ და სტრინგიც -->

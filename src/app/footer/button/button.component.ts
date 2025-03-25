@@ -7,5 +7,7 @@ import { Component , Input,  } from '@angular/core';
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {
-@Input() info: string | undefined;
+
+  @Input()info!: string; 
+  
 }

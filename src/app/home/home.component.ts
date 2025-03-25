@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = 'home works!!';
-  color: string = 'black'; // Default color
+  color: string = 'white'; // Default color
   linkstyle: string = 'black';
   linkstyle1: string = 'white';
   ProductName = 'National Team'

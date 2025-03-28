@@ -39,6 +39,7 @@ export class HomeComponent {
 
   showList(){
   this.isvisible ? this.isvisible = false : this.isvisible = true
+   //მეორენაირად ასეც მუშაობს  this.isvisible = !this.isvisible
   }
 
   // makeUpperCase(text : string){

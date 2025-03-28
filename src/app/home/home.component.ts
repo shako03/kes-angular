@@ -51,8 +51,9 @@ export class HomeComponent {
   }
 
   edit(ind : number){
-    this.namesArray.splice(ind, 1)
     this.firstName = this.namesArray[ind]
+    this.namesArray.splice(ind, 1)
   }
 }
 
+ 

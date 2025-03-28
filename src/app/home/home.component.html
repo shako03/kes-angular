@@ -60,7 +60,12 @@
  <!-- სტრუქტურული დეკორატორი ngFor |  ngIf -->
 
  <ul *ngIf="isvisible" >
-      <li *ngFor="let el of namesArray" >{{el}}</li>    <!--   სჭირდება იმპორტი common module - სი  --> 
+       <div *ngFor="let el of namesArray let index = index"  class="li-group"> <!--   სჭირდება იმპორტი common module - სი  --> 
+            
+             <li>{{el}}</li>    
+             <button (click)="delete(index)">delete</button>
+
+       </div>
       <!-- შეგვიძლია ასეც გადავცეთ makeUpperCase(el) ეს ფუნქცია გვაქვს ტს ში და გადაყავს ტექსტი მაღალ შტრიხში -->
  </ul>
 

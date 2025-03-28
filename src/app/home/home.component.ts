@@ -45,5 +45,14 @@ export class HomeComponent {
   // makeUpperCase(text : string){
   //   return text.toUpperCase()
   // }
+
+  delete(ind : number){
+    this.namesArray.splice(ind, 1) //ind არის ინდექსი და 1 ნიშნავს რომ 1 ელემენტი წაიშალოს
+  }
+
+  edit(ind : number){
+    this.namesArray.splice(ind, 1)
+    this.firstName = this.namesArray[ind]
+  }
 }
 
